@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lisa Ayu Aryanti</title>
+</head>
+<body>
+    <header>Tugas Web Latihan JavaScript</header>
+    <br>
+    <div class="flex-container">
+        <p class="paragraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laboriosam assumenda soluta consequuntur quo tenetur quae ad iste ut suscipit, dolor nobis modi nulla officia, repellat perspiciatis voluptate eligendi itaque.</p>
+        <p class="paragraf2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reprehenderit molestiae, provident beatae odit vel ullam cumque, voluptate dolorum aliquid perferendis sapiente ducimus molestias tempore obcaecati necessitatibus at voluptatibus voluptatum.</p>
+    </div>
+
+    <div class="container">
+        <button id="tombol" class="btnJs">Tampilkan Tanggal Hari Ini</button>
+        <p id="output"></p>
+    </div>
+    
+    <div>
+        <p class="paragraf3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, quia sint recusandae est qui, consequuntur dignissimos, necessitatibus vel delectus accusantium aperiam rerum! At quas perspiciatis libero saepe voluptate accusantium perferendis, reiciendis odit id cumque porro architecto ut inventore, tempora commodi!</p>
+        <p class="paragraf4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique nisi ullam eligendi et necessitatibus beatae, adipisci sit non reprehenderit eaque enim reiciendis excepturi accusantium illo. Cumque tenetur at adipisci, doloribus minus commodi possimus porro, soluta, modi cum voluptatum consequatur nihil.</p>
+    </div>
+</body>
+<script language="javascript">
+    alert("Halooo Lisa Ayu Aryanti!");
+
+    tombol.addEventListener("click", function() {
+    const sekarang = new Date();
+    const tampilTanggal = sekarang.toLocaleDateString("id-ID", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    });
+
+    output.innerText = "Hari ini: " + tampilTanggal;
+});
+
+</script>
+</html>
